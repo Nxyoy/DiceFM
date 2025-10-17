@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My GitHub Radio Stream</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+        .player-container {
+            border: 1px solid #ccc;
+            padding: 20px;
+            display: inline-block;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="player-container">
+        <h1>📻 Live Stream</h1>
+        <p>Listen to the stream from our Icecast server:</p>
+
+        <audio controls autoplay>
+            <source src="http://[Your_Public_IP]:8000/source.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+        <p>This page is hosted by GitHub Pages.</p>
+        <p>The audio stream is provided by a separate Icecast server.</p>
+    </div>
+
+</body>
+</html>
